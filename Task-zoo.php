@@ -5,30 +5,26 @@
 
 
 
-<?php
-$array = ["Ursus arctos", "Sciurus", "Dipodidae", "Machairodontinae", "Panthera tigris", "Leporidae", "Alces alces", "Talpidae", "Cervidae", "Castor fiber", "Canis lupus"];
+ <?php
+// $array = ["Ursus arctos", "Sciurus", "Dipodidae", "Machairodontinae", "Panthera tigris", "Leporidae", "Alces alces", "Talpidae", "Cervidae", "Castor fiber", "Canis lupus"];
 
-$d = array_fill_keys($array, 'evrazia');
-print_r($d);
+//$d = array_fill_keys($array, 'evrazia');
+// print_r($d);
 ?>
 
 
 <?php
- $k = str_word_count($array);
 
-$array = ["Ursus arctos", "Sciurus", "Dipodidae", "Machairodontinae", "Panthera tigris", "Leporidae", "Alces alces", "Talpidae", "Cervidae", "Castor fiber", "Canis lupus"];
-$text_nonspace=str_replace(array(" "), '', $array);
-echo "<br>" . "<br>";
+$array = array(
+      'evrazya' => array('Ursus arctos', 'Sciurus', 'Dipodidae', 'Machairodontinae'),
+      'africa' => ['Hippopotamus amphibius', 'Giraffa camelopardalis', 'Panthera leo', 'Hippotigris', 'Canis aureus'],
+    );
+          print_r($array);
+      echo '<br>';
+    echo count($array, COUNT_RECURSIVE);
 
-if
-
-
-//foreach ($array as $key => $value) {
-  //echo "$key: $value\n";
-//}
-
-// $input = [1 => "a", "b", "c", "d"];
-// print_r(array_slice($input, 0, 4));
-// echo "</br>";
-
+$arr1 = ['Ursus arctos', 'Dipodidae opog'];
+           str_shuffle(implode(",", $arr1));
+    $shuffled = str_shuffle($comma_separated);
+    echo ($chuffled);
 ?>
